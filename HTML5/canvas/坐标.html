@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>菜鸟教程</title>
+        <script>
+            window.onload=function(){
+                var c=document.getElementById("myCanvas");
+                var ctx=c.getContext("2d");
+
+                // moveTo(x,y) 定义线条开始坐标
+                ctx.moveTo(0,0);
+                // lineTo(x,y) 定义线条结束坐标
+                ctx.lineTo(200,100);
+                // 绘制线条我们必须使用到 "ink" 的方法，就像stroke().
+                ctx.stroke();
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black"></canvas>
+    </body>
+</html>

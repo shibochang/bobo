@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>菜鸟教程</title>
+        <script>
+            window.onload=function(){
+                var c=document.getElementById("myCanvas");
+                // getContext() 方法返回一个用于在画布上绘图的环境。
+                var ctx=c.getContext("2d");
+                // fillStyle属性可以是CSS颜色，渐变，或图案。fillStyle 默认设置是#000000（黑色）。
+                ctx.fillStyle="red";
+                // fillRect(x,y,width,height) 方法定义了矩形当前的填充方式。
+                ctx.fillRect(0,0,150,75);
+            }
+        </script>
+    </head>
+    <body>
+        <!-- 创建一个画布 -->
+        <canvas id="myCanvas" width="200" height="100" style="border: 1px solid black">
+        </canvas>
+    </body>
+</html>
